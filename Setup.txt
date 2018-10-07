@@ -4,4 +4,10 @@
 4) python manage.py startapp server
 5) python manage.py migrate
 6) python manage.py makemigrations server
-7) 
+7) pipenv install djangorestframework
+8) python manage.py startapp api
+9) pipenv install django-rest-auth
+10) pipenv install django-allauth
+-------------
+git fetch upstream
+git rebase upstream/master

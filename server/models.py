@@ -1,10 +1,11 @@
 from django.db import models
+from django.contrib.auth.models import AbstractUser
+from django.conf import settings
 
 # Create your models here.
-class Dummy(models.Model):
-    title = models.CharField(max_length=200)
-    description = models.TextField()
+
+class CustomUser(AbstractUser):
+    name = models.CharField(blank=True, max_length=255)
 
     def __str__(self):
-        """A string representation of the model."""
-        return self.title
+        return self.email
