@@ -1,0 +1,2 @@
+1) pipenv install django
+2)
